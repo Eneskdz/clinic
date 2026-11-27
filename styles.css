@@ -1,0 +1,23 @@
+/* A small reset so the page starts consistently. Leave these three rules. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; color: #172554; background: #ffffff; }
+img { max-width: 100%; height: auto; }
+
+/* Your palette. Change the values, then use the variables below. */
+:root {
+  --accent: #1d4ed8;
+  --accent-soft: #eaf0fd;
+}
+
+/* Your styles start here. */
+header { background: var(--accent-soft); padding-top: 1rem; padding-bottom: 1rem; }
+h1, h2, h3, a { color: var(--accent); }
+label { display: block; margin-top: 0.75rem; }
+input, select, button { font: inherit; padding: 0.4rem 0.6rem; }
+button { display: block; margin-top: 1rem; background: var(--accent); color: #ffffff; border: 0; border-radius: 6px; cursor: pointer; }
+footer { margin-top: 2rem; border-top: 1px solid var(--accent-soft); }
+
+/* Phone width */
+input, select, button { max-width: 100%; }
+nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+header, main, footer { padding-left: 1rem; padding-right: 1rem; }
